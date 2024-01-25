@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: #34495e;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  max-width: 1000px;
+  min-height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 1.5rem;
+}
+
+.left,
+.right {
+  flex-basis: calc(50% - 1rem);
+}
+
+form {
+  padding: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #2c3e50;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333; /* Adjust the label color as needed */
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#zip {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+#zip select,
+#zip input[type="number"] {
+  width: 48%;
+  margin-right: 4px;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+
+button.submit {
+  color: #fff;
+  padding: 14px 32px;
+  margin: 16px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #101011, #171819);
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+button.submit:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 770px) {
+  .left,
+  .right {
+    flex-basis: 100%;
+  }
+
+  #zip select,
+  #zip input[type="number"] {
+    width: 100%;
+  }
+}
